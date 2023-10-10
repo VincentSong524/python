@@ -5,7 +5,6 @@ print(cars)
 cars.sort(reverse=True)#反向排序
 print(cars)
 
-
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print("Here is the original list:")
 print(cars)
@@ -20,3 +19,9 @@ cars.reverse()
 print(cars)
 cars.reverse()
 print(cars)
+
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
