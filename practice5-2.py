@@ -1,0 +1,6 @@
+print('true' == 'false')
+print('true'.lower() == 'false'.lower())
+print("")
+print("")
+print("")
+print("")
