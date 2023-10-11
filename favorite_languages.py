@@ -42,3 +42,13 @@ my_tools.line()
 
 for language in set(favorite_languages.values()):
     print(language)
+
+my_tools.line()
+
+need_poll = ['phil', 'sarah', 'jen', 'edward', 'henry', 'harry']
+
+for name in need_poll:
+    if name in favorite_languages.keys():
+        print(f"{name.title()} thank you for participating in the survey.")
+    else:
+        print(f"{name.title()}, please take our poll!")
