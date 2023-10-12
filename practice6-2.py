@@ -1,13 +1,13 @@
 favroite_numbers = {
-    'henry': 5,
-    'vincent': 6,
-    'jhon': 10,
-    'harry': 11,
-    'hunter': 3,
+    'henry': [1, 4, 7],
+    'vincent': [2, 4, 6, 8, 10],
+    'jhon': [1, 3, 5, 7, 9],
+    'harry': [1, 2, 3, 4, 5, 6, 7],
+    'hunter': [1, 2, 3, 6, 8]
 }
 
-print(f"henry favorite {favroite_numbers['henry']}.")
-print(f"harry favorite {favroite_numbers['harry']}.")
-print(f"jhon favorite {favroite_numbers['jhon']}.")
-print(f"vincent favorite {favroite_numbers['vincent']}.")
-print(f"hunter favorite {favroite_numbers['hunter']}.")
+for name, numbers in favroite_numbers.items():
+    print(f"{name}'s favorite are:")
+    for number in numbers:
+        print(number,end=' ')
+    print()
