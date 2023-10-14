@@ -12,7 +12,8 @@ for topping in pizza['toppings']:
     print("\t" + topping)
 
 def make_pizza(*toppings):
-    """打印顾客点的所有配料"""
+    """概述要制作的披萨。"""
+    print("\nMaking a pizza with the following toppings:")
     for topping in toppings:
         print(topping)
 
