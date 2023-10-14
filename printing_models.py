@@ -18,7 +18,7 @@ def show_completed_models(completed_models):
 unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs, completed_models)
+print_models(unprinted_designs[:], completed_models)#使用列表切片方式阻止函数修改列表
 show_completed_models(completed_models)
 
 #试一下打印函数文档
