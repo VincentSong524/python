@@ -1,10 +1,8 @@
-def get_formatted_name(first_name, last_name, middle_name=''):
-    """返回整洁的姓名"""
-    if middle_name:
-        full_name = f"{first_name} {middle_name} {last_name}"
-    else:
-        full_name = f"{first_name} {last_name}"
-    return full_name.title()
+import get_formatted_name
+from get_formatted_name import get_formatted_name
+from get_formatted_name import get_formatted_name as fn
+import get_formatted_name as mn #将模块名字重命名的导入方式，而不是将函数重命名
+from get_formatted_name import *
 
 #循环输入
 while True:
@@ -21,3 +19,8 @@ while True:
 
     formatted_name = get_formatted_name(f_name, l_name)
     print(f"\nHello, {formatted_name}")
+
+f_name = 'vincent'
+l_name = 'Song'
+internet_name = mn.get_formatted_name(f_name, l_name)
+print(internet_name)
