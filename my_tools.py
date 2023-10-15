@@ -4,6 +4,7 @@ def line():
         print('-',end='')
     print()
 
+
 def binary_search(list, item):
     """二分查找"""
     low, high = 0, len(list) - 1
@@ -19,6 +20,7 @@ def binary_search(list, item):
         else:
             high = mid - 1
     return None
+
 
 def greet_user(username):
     """显示简单的问候语。"""
