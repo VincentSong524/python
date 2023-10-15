@@ -1,9 +1,11 @@
 def line():
+    """打印横线"""
     for i in range(80):
         print('-',end='')
     print()
 
 def binary_search(list, item):
+    """二分查找"""
     low, high = 0, len(list) - 1
 
     while low <= high:
@@ -17,11 +19,11 @@ def binary_search(list, item):
         else:
             high = mid - 1
     return None
+
+def greet_user(username):
+    """显示简单的问候语。"""
+    print(f"Hello, {username.title()}!")
     
 
 if __name__ == "__main__":
-    line()
-    
-    my_list = [1, 3, 5, 7, 9]
-    print(binary_search(my_list, 3))
-    print(binary_search(my_list, 5))
+    greet_user('jesse')
