@@ -9,6 +9,9 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E']
 #中奖号码存储列表
 bingo =[]
 
+#我的答案
+my_ticket= []
+
 #随机抽取四个字符为中奖号码
 while True:
     bingo.append(choice(nums))
@@ -21,9 +24,7 @@ for i in bingo:
     print(i, end=' ')
 print()
 
-#我的答案
-my_ticket= []
-
+#猜答案
 while True:
     guess += 1
     #存储中奖号码
