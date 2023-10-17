@@ -63,6 +63,12 @@ class Battery:
         range = self.battery_size * 3
         print(f"This car can go about {range} miles on a full charge.")
 
+    
+    def upgrade_battery(self):
+        """检测电池电量是否是一百如果不是一百就设置为一百"""
+        if self.battery_size != 100:
+            self.battery_size = 100
+
 
 class ElectricCar(Car):
     """电动汽车的独特之处。"""
@@ -108,3 +114,9 @@ my_new_car.read_odometer()
 my_new_car.increment_ofometer(23_500)
 my_new_car.read_odometer()
 """
+
+byd = ElectricCar('BYD', '秦', '2023')
+print(byd.get_descriptive_name())
+byd.battery.get_range()
+byd.battery.upgrade_battery()
+byd.battery.get_range()

@@ -28,6 +28,28 @@ class User:
         self.login_attempts = 0
 
 
+class Privileges:
+    """"权限类"""
+
+    def __init__(self) -> None:
+        """初始化权限"""
+        self.privileges = ['can add post', 'can delete post', 'can ban user']
+
+
+    def show_privileges(self):
+        """"显示管理员的权限"""
+        for privilege in self.privileges:
+            print(f"Admin {privilege}")
+
+
+class Admin(User):
+    """管理员"""
+
+    def __init__(self, first_name, last_name) -> None:
+        super().__init__(first_name, last_name)
+        self.privileges = Privileges()
+
+
 #henry
 henry = User('Henry', 'Morgan')
 henry.describe_user()
@@ -46,3 +68,7 @@ song.increment_login_attempts()
 print(f"{song.login_attempts}")
 song.reset_login_attempts()
 print(f"{song.login_attempts}")
+
+#Admin
+admin = Admin('admin', 'none')
+admin.privileges.show_privileges()
