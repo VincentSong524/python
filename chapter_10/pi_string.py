@@ -9,7 +9,7 @@ file_name = 'pi_million_digits.txt'
 # 构建要处理的文件的相对路径
 file_to_process = os.path.join(script_dir, file_name)
 
-with open(file_to_process) as file_object:
+with open(file_name) as file_object:
     lines = file_object.readlines()
 
 pi_string = ''
