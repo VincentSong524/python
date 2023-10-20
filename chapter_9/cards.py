@@ -17,12 +17,13 @@ class FrenchDeck:
         return self._cards[position]
     
 
-beer_card = Card('7', 'diamonds')
-print(beer_card)
+if __name__ == '__main__':
+    beer_card = Card('7', 'diamonds')
+    print(beer_card)
 
-deck = FrenchDeck()
-print(len(deck))
+    deck = FrenchDeck()
+    print(len(deck))
 
-print(deck[0])
-print(deck[-1])
+    print(deck[0])
+    print(deck[-1])
 
