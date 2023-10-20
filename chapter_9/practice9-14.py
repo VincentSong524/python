@@ -7,8 +7,6 @@ guess = 0
 #nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E']
 nums = [str(n) for n in range(1, 11)] + list('ABCDEF')
 
-print(nums)
-
 #中奖号码存储列表
 bingo =[]
 
