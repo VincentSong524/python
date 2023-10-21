@@ -1,6 +1,5 @@
 import json
 
-
 def get_stored_username():
     """如果存储了用户名，就获取它。"""
     filename = 'username.json'
@@ -24,7 +23,6 @@ def greet_user():
             with open(filename, 'w') as f:
                 json.dump(username, f)
                 print(f"We'll remember you when you come vack, {username}!")
-
 
 
 if __name__ == "__main__":
