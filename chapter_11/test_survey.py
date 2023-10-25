@@ -4,7 +4,7 @@ from survey import AnonymousSurvey
 class TestAnonymousSurvey(unittest.TestCase):
     """针对 AnonymousSurvey 类的测试。"""
 
-    def setUP(self):
+    def setUp(self):
         """
         创建一个调查对象和一组答案，供使用的测试方法使用。
         """
