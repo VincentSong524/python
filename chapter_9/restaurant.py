@@ -29,31 +29,3 @@ class Restaurant:
         """递增就餐人数"""
         if number_serverd >= 0:
             self.number_serverd += number_serverd
-
-
-#practice9-6
-class IceCreamStand(Restaurant):
-    """冰淇淋小店"""
-
-    def __init__(self, restaurant_name, cuisine_type, number_serverd=0) -> None:
-        super().__init__(restaurant_name, cuisine_type, number_serverd)
-        self.flovors = ['apple', 'banana','organe', 'pear']
-
-
-    def show_flovors(self):
-        for flovor in self.flovors:
-            print(f"{flovor}")
-
-
-ice = IceCreamStand('IceCream', 'icecream')
-ice.show_flovors()
-
-
-kfc = Restaurant("KFC", 'Fried chicken')
-kfc.describe_restaurant()
-
-dicos = Restaurant("Dicos", "Fried chicken")
-dicos.describe_restaurant()
-
-how_many_get = Restaurant('KFC', 'Fried chicken', 100)
-print(how_many_get.number_serverd)

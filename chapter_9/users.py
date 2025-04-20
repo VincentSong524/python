@@ -1,3 +1,5 @@
+"""一组用户信息类"""
+
 class User:
     """用户信息"""
 
@@ -48,27 +50,3 @@ class Admin(User):
     def __init__(self, first_name, last_name) -> None:
         super().__init__(first_name, last_name)
         self.privileges = Privileges()
-
-
-#henry
-henry = User('Henry', 'Morgan')
-henry.describe_user()
-henry.greet_user()
-
-#vincent
-vincent = User('Vincent', "Song")
-vincent.describe_user()
-vincent.greet_user()
-
-#practice9-5
-song = User('wansen', 'song')
-song.increment_login_attempts()
-song.increment_login_attempts()
-song.increment_login_attempts()
-print(f"{song.login_attempts}")
-song.reset_login_attempts()
-print(f"{song.login_attempts}")
-
-#Admin
-admin = Admin('admin', 'none')
-admin.privileges.show_privileges()
